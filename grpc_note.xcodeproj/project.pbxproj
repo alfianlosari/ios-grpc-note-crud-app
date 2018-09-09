@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56342B29745FA5A85A30EA1F /* Pods_grpc_note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EB4F71C38BB08075B80F28 /* Pods_grpc_note.framework */; };
 		8B4767472143C24B006D64E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4767462143C24B006D64E1 /* AppDelegate.swift */; };
 		8B4767492143C24B006D64E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4767482143C24B006D64E1 /* ViewController.swift */; };
 		8B47674C2143C24B006D64E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B47674A2143C24B006D64E1 /* Main.storyboard */; };
 		8B47674E2143C24C006D64E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B47674D2143C24C006D64E1 /* Assets.xcassets */; };
 		8B4767512143C24D006D64E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B47674F2143C24C006D64E1 /* LaunchScreen.storyboard */; };
+		8B47676221442350006D64E1 /* notes.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4767602144234F006D64E1 /* notes.pb.swift */; };
+		8B47676321442350006D64E1 /* notes.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47676121442350006D64E1 /* notes.grpc.swift */; };
+		8B4767652144BD5B006D64E1 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4767642144BD5B006D64E1 /* DataRepository.swift */; };
+		8B4767672144DDBB006D64E1 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4767662144DDBB006D64E1 /* NoteListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62757EA0CE7914DE3843633A /* Pods-grpc_note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grpc_note.release.xcconfig"; path = "Pods/Target Support Files/Pods-grpc_note/Pods-grpc_note.release.xcconfig"; sourceTree = "<group>"; };
 		8B4767432143C24B006D64E1 /* grpc_note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grpc_note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4767462143C24B006D64E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B4767482143C24B006D64E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		8B47674D2143C24C006D64E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B4767502143C24C006D64E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B4767522143C24D006D64E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4767602144234F006D64E1 /* notes.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notes.pb.swift; sourceTree = "<group>"; };
+		8B47676121442350006D64E1 /* notes.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notes.grpc.swift; sourceTree = "<group>"; };
+		8B4767642144BD5B006D64E1 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		8B4767662144DDBB006D64E1 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		A7EB4F71C38BB08075B80F28 /* Pods_grpc_note.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grpc_note.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFE9452260CCFF328BF9663 /* Pods-grpc_note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grpc_note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-grpc_note/Pods-grpc_note.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56342B29745FA5A85A30EA1F /* Pods_grpc_note.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B434CD16481F8CE427D0FA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7EB4F71C38BB08075B80F28 /* Pods_grpc_note.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F954C861B01FACA9803159E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAFE9452260CCFF328BF9663 /* Pods-grpc_note.debug.xcconfig */,
+				62757EA0CE7914DE3843633A /* Pods-grpc_note.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B47673A2143C24B006D64E1 = {
 			isa = PBXGroup;
 			children = (
 				8B4767452143C24B006D64E1 /* grpc_note */,
 				8B4767442143C24B006D64E1 /* Products */,
+				5F954C861B01FACA9803159E /* Pods */,
+				1B434CD16481F8CE427D0FA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				8B4767462143C24B006D64E1 /* AppDelegate.swift */,
+				8B4767662144DDBB006D64E1 /* NoteListViewController.swift */,
 				8B4767482143C24B006D64E1 /* ViewController.swift */,
 				8B47674A2143C24B006D64E1 /* Main.storyboard */,
 				8B47674D2143C24C006D64E1 /* Assets.xcassets */,
+				8B47676121442350006D64E1 /* notes.grpc.swift */,
+				8B4767602144234F006D64E1 /* notes.pb.swift */,
 				8B47674F2143C24C006D64E1 /* LaunchScreen.storyboard */,
 				8B4767522143C24D006D64E1 /* Info.plist */,
+				8B4767642144BD5B006D64E1 /* DataRepository.swift */,
 			);
 			path = grpc_note;
 			sourceTree = "<group>";
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B4767552143C24D006D64E1 /* Build configuration list for PBXNativeTarget "grpc_note" */;
 			buildPhases = (
+				C15C213C5CBA9094878CC9EE /* [CP] Check Pods Manifest.lock */,
 				8B47673F2143C24B006D64E1 /* Sources */,
 				8B4767402143C24B006D64E1 /* Frameworks */,
 				8B4767412143C24B006D64E1 /* Resources */,
+				9C1E5948B15134254EEF3B12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +168,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C1E5948B15134254EEF3B12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-grpc_note/Pods-grpc_note-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-grpc_note/Pods-grpc_note-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15C213C5CBA9094878CC9EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grpc_note-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B47673F2143C24B006D64E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B47676221442350006D64E1 /* notes.pb.swift in Sources */,
+				8B4767652144BD5B006D64E1 /* DataRepository.swift in Sources */,
+				8B4767672144DDBB006D64E1 /* NoteListViewController.swift in Sources */,
 				8B4767492143C24B006D64E1 /* ViewController.swift in Sources */,
+				8B47676321442350006D64E1 /* notes.grpc.swift in Sources */,
 				8B4767472143C24B006D64E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +367,7 @@
 		};
 		8B4767562143C24D006D64E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFE9452260CCFF328BF9663 /* Pods-grpc_note.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +386,7 @@
 		};
 		8B4767572143C24D006D64E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62757EA0CE7914DE3843633A /* Pods-grpc_note.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
